@@ -78,7 +78,7 @@ echo -e "QUAL\t#non-indel\t#SNPs\t#transitions\t#joint\tts/tv\t#joint/#ref #join
 $WORK/myapps/vcfutils.pl qstats var.flt.vcf >> ../results/snps.out.txt
 
 ## summarize contigs in output file
-grep -c "^>" blast/contigs.fa > results/contigsNumber.out.txt #?does this need echo? or will it output as is?
+grep -c "^>" ../blast/contigs.fa > ../results/contigsNumber.out.txt 
 
 # move to blast directory
 cd ../blast
